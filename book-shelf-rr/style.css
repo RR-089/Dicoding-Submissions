@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: midnightblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shelf {
+  margin-top: 20px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  border: 1px solid #ccc;
+}
+
+.bookshelf {
+  margin-bottom: 20px;
+}
+
+.bookshelf h2 {
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input, button {
+  margin-bottom: 10px;
+}
+
+input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+input:hover{
+  border-color: #999;
+}
+
+input:focus{
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+label{
+  font-weight: bold;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bolder;
+}
+
+button.button-hapus {
+  background-color: #fe1717;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.button-hapus:hover {
+  background-color: #b40a0a;
+}
+
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.search-container input[type="text"]:hover {
+  border-color: #999;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #1fb1a5;
+  box-shadow: 0 0 5px rgba(4, 201, 255, 0.6);
+}
+
+.search-container button {
+  background-color: #00ffc3;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.search-container button:hover {
+  background-color: #1abc9b;
+  color: #fff;
+}
+
+.search-results{
+  padding: 25px;
+  border: 1px solid #ccc;
+}

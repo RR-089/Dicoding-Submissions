@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps - RR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Bookshelf Apps</h1>
+      </div>
+      <div class="form-container">
+        <h2>Tambahkan Buku Baru</h2>
+        <input type="text" id="title" placeholder="Judul Buku" required />
+        <input type="text" id="author" placeholder="Penulis" required />
+        <input type="number" id="year" placeholder="Tahun Terbit" required />
+        <input type="checkbox" id="isComplete" />
+        <label for="isComplete">Selesai dibaca</label><br />
+        <button onclick="addBook()">Tambahkan Buku</button>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari Judul atau Penulis"
+        />
+        <button onclick="searchBooks()">Cari Buku atau Penulis</button>
+      </div>
+      <div class="search-results">
+        <h2>Hasil Pencarian</h2>
+        <ul id="search-results-list"></ul>
+      </div>
+      <div class="shelf">
+        <div class="bookshelf" id="unfinished-books">
+          <h2>Belum selesai dibaca</h2>
+          <ul id="unfinished-list"></ul>
+        </div>
+        <div class="bookshelf" id="finished-books">
+          <h2>Selesai dibaca</h2>
+          <ul id="finished-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
